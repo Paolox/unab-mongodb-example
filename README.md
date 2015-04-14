@@ -1,31 +1,16 @@
-# unab-first-rest-sample
+# unab-mongodb-example
 
-UNAB first REST sample
+UNAB Ejemplo para uso de MongoDB
 
-Este proyecto es un ejemplo simple de como poder crear un proyecto basado en REST mediante el uso de NODEJS y EXPRESSJS. Construido usando KRAKENJS
+Este proyecto utiliza la base de datos MongoDB por medio del proyecto Mongoose el cual es un Modelador de Objetos para NodeJS.
+Para Windows, dado que para instalar Mongoose en Windows se usa el proyecto node-gyp para compilar algunos fuentes, es necesario seguir las indicaciones previas en:
 
-*PREREQUISITOS*:
+[Node-gyp Instrucciones para Windows](https://github.com/TooTallNate/node-gyp/wiki/Visual-Studio-2010-Setup)
 
-- [NODEJS](https://nodejs.org/)
-- [KRAKENJS](http://krakenjs.com/)
-- [POSTMAN](https://www.getpostman.com/)
- 
-*Instrucciones*:
+Una vez lo anterior, es necesario hacer lo siguiente:
 
-- Verificar que nodejs esté correctamente instalado: escribir en la consola 
-$ node -v
-Deberia aparecer la version de nodejs
+**IMPORTANTE**: Es posible que alguno de los pasos solicite instalar Python. Si se solicita, usar la version 2.7.9 o alguna inferior a las 3.0
 
-- Usar KrakenJS para crear una plantilla de proyecto. Seguir instrucciones desde su pagina principal
-- Una vez creado el proyecto, ejecutar: 
-$npm start 
-La aplicación deberia iniciar
-
-*Posibles problemas con Windows 8*:
-
-Some of Mean.io dependencies uses node-gyp with supported Python version 2.7.x. So if you see an error related to node-gyp rebuild follow next steps:
-install Python 2.7.x
-install Microsoft Visual Studio C++ 2012 Express
-Run NPM update
-$ npm update -g
-
+- $ npm config set msvs_version 2012 --global
+- $ npm install -g node-gyp
+- $ npm install mongoose --mongodb:native
