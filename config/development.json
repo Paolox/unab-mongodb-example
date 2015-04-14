@@ -1,4 +1,8 @@
 {
+    "database": {
+      "mongodbUrl": "mongodb://localhost:27017",
+      "dbname": "productdb"
+    },
     
 
     "middleware": {
@@ -11,7 +15,7 @@
                 "arguments": [
                     "path:./public",
                     "path:./.build",
-                    {   
+                    {
                         "copier": {
                             "module": "kraken-devtools/plugins/copier",
                             "files": "**/*"

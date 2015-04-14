@@ -1,5 +1,5 @@
 {
-  "name": "unab-first-rest-sample",
+  "name": "unab-mongodb-sample",
   "version": "0.1.0",
   "description": "UNAB first REST sample",
   "author": "@mreyescano",
@@ -12,7 +12,8 @@
     "express": "^4.3.0",
     "kraken-devtools": "^1.0.0",
     "kraken-js": "^1.0.1",
-    "localizr": "^0.1.0"
+    "localizr": "^0.1.0",
+    "mongoose": "^4.0.1"
   },
   "devDependencies": {
     "grunt": "^0.4.1",
