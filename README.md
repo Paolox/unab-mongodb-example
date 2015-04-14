@@ -13,4 +13,4 @@ Una vez lo anterior, es necesario hacer lo siguiente:
 
 - $ npm config set msvs_version 2012 --global
 - $ npm install -g node-gyp
-- $ npm install mongoose --mongodb:native
+- $ npm install mongoose --mongodb:native --save
